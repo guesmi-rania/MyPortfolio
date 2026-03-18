@@ -50,17 +50,33 @@
         color: #fff;
         font-family: 'Fira Code', monospace;
       }
-       /* Fix affichage image complète */
-  .image-div {
-    overflow: visible !important;
-    height: auto !important;
-  }
-
+  /* Image desktop — landscape */
   .image-div img {
     width: 100%;
-    height: auto !important;
-    object-fit: contain !important;
+    height: auto;
+    object-fit: contain;
     display: block;
+    border-radius: 8px;
+  }
+
+  /* Image mobile — portrait (téléphone) */
+  .image-div img.mobile-screenshot {
+    width: auto;
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 16px;
+  }
+
+  .image-div.mobile-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 16px;
   }
       /* couleurs par technologie */
       .badge-react      { background: #61DAFB; color: #000; }
@@ -400,8 +416,10 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="image-div"><img src="src/webp/docly.webp" alt="Docly App Preview"></div>
-                        </div>
+                            <div class="image-div mobile-preview">
+                                <img src="src/webp/docly.webp" alt="Docly App Preview" class="mobile-screenshot">
+                              </div>
+                             </div>
                     </a>
 
                     <!-- ---- Shoply ---- -->
@@ -425,7 +443,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="image-div"><img src="src/webp/shoply.webp" alt="shoply"></div>
+                            <div class="image-div mobile-preview"><img src="src/webp/shoply.webp" alt="shoply" class="mobile-screenshot"></div>
                         </div>
                     </a>
 
@@ -475,7 +493,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="image-div"><img src="src/webp/gotalk-demo.webp" alt="GoTalk Screenshot"></div>
+                            <div class="image-div mobile-preview"><img src="src/webp/gotalk-demo.webp" alt="GoTalk Screenshot" class="mobile-screenshot"></div>
                         </div>
                     </a>
 
