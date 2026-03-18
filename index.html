@@ -50,6 +50,18 @@
         color: #fff;
         font-family: 'Fira Code', monospace;
       }
+       /* Fix affichage image complète */
+  .image-div {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .image-div img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+  }
       /* couleurs par technologie */
       .badge-react      { background: #61DAFB; color: #000; }
       .badge-nodejs     { background: #68A063; }
@@ -319,8 +331,11 @@
                         <div class="project-box project-box3" id="project-box3">
                             <div class="info-div">
                                 <img src="src/png/admin-dashboard.png" alt="" class="faviconforProjectAquaregia">
-                                <article class="ProjectHeading">Pastry Web App – Admin Dashboard</article>
-                                <p class="ProjectDescription">A dynamic web application for managing a pastry business. The admin dashboard allows adding, updating, and managing products, categories, and orders through a simple and intuitive interface. The project is fully deployed on Render (frontend and backend) and uses MongoDB for data management and persistence. Ideal for efficiently handling inventory, customer orders, and showcasing products online.</p>
+                                <article class="ProjectHeading">Admin Dashboard</article>
+                                <p class="ProjectDescription">
+                                    A full-stack pastry management app with an admin dashboard to handle products, 
+                                    categories and orders. Deployed on Render with MongoDB for data persistence.
+                                  </p>
                                 <div class="project-skills">
                                   <span class="skill-badge badge-react">React JS</span>
                                   <span class="skill-badge badge-nodejs">Node.js</span>
@@ -395,7 +410,7 @@
                             <div class="info-div">
                                 <img src="src/png/shoply.png" alt="" class="faviconforProjectAquaregia">
                                 <article class="ProjectHeading">Shoply</article>
-                                <p class="ProjectDescription">Shoply is a modern e-commerce platform for women's fashion that allows users to browse products, add items to their cart, and complete purchases through a simple and secure checkout. The application is built with Angular CLI v21 for the frontend and Node.js for the backend, providing a fast, responsive, and scalable shopping experience. ✨</p>
+                                <p class="ProjectDescription">Shoply is a modern e-commerce platform for women's fashion that allows users to browse products, add items to their cart, and complete purchases through a simple and secure checkout ,providing a fast, responsive, and scalable shopping experience. ✨</p>
                                 <div class="project-skills">
                                   <span class="skill-badge badge-angular">Angular</span>
                                   <span class="skill-badge badge-nodejs">Node.js</span>
